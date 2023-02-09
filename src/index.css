@@ -11,6 +11,10 @@ body {
   font-weight: 300;
 }
 
+header {
+  margin-top: 2rem;
+}
+
 main {
   padding: 15px;
   box-shadow: 0, 0, 5px #333;
@@ -26,6 +30,7 @@ a {
 a:hover {
   color: #6c63ff;
 }
+
 
 i {
   transition: .125s ease-in;
@@ -50,6 +55,8 @@ footer,
 footer>div {
   height: 5rem;
 }
+
+
 
 input {
   padding: .25rem .5rem;
@@ -92,6 +99,7 @@ input {
 
 .flex-gap {
   gap: 50px;
+
 }
 
 .flex-wrap {
@@ -107,7 +115,11 @@ input {
 }
 
 .profile {
-  width: 30rem;
+  width: 20rem;
+  height: 20rem;
+  clip-path: circle();
+  border: 3px solid #333;
+  border-radius: 50%;
 }
 
 .section-margin {
@@ -117,6 +129,11 @@ input {
 .first-section-margin {
   margin: 0rem 0 2rem 0;
 }
+
+/*.projects-width {*/
+/*  width:300px;*/
+/*}*/
+
 
 .card {
   width: 16rem;
@@ -174,7 +191,7 @@ input {
   font-weight: bold;
 }
 
-@media (max-width:500px) {
+@media(max-width:500px) {
 
   .profile {
     width: 25rem;
