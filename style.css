@@ -42,6 +42,18 @@ i {
   transition: .125s ease-in;
 }
 
+li i {
+  font-size: 5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+a i {
+  font-size: 2.5rem;
+}
+
 i:hover {
   color: #6c63ff;
 }
