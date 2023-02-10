@@ -22,10 +22,15 @@ main {
   line-height: 1.5;
 }
 
+a i {
+  margin: 0 10px;
+}
+
 a {
   color: black;
-  text-decoration: none;
   transition: .15s ease-in;
+  font-weight: bold;
+  text-underline-offset: 2px
 }
 
 a:hover {
@@ -169,10 +174,10 @@ input {
 }
 
 .button {
-  background: none;
+  background: #fff;
   border: 1px solid #6c63ff;
   padding: .3rem .75rem;
-  transition: .3s ease-in;
+  transition: .15s ease-in;
   border-radius: 3px;
 }
 
