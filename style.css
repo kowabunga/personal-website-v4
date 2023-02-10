@@ -218,7 +218,8 @@ input {
   margin-right: 1rem;
 }
 
-input {
+input,
+textarea {
   border: 1px solid #6c63ff;
 }
 
