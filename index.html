@@ -2,19 +2,158 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <script defer src="https://kit.fontawesome.com/7281f91f05.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
   <title>Anthony Siletti</title>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <header class='w-full flex flex-center flex-column'>
+    <div class='profile-outer'>
+      <img class='profile' src='/assets/278987322_353578783257844_1431226512088762579_n.jpg' />
+    </div>
+  </header>
+  <main class='flex flex-center flex-column'>
+    <section class='first-section-margin flex flex-gap section-intro-border'>
+      <div>
+        <h1 class='lead'>Hi, I'm Anthony. </h1>
+        <p>
+          A full stack web developer and I'm ready to take on the world.
+        </p>
+        <p>
+          Feel free to take a look at my projects below to see what I'm up
+          to.
+        </p>
+      </div>
+    </section>
+
+    <section class='section-margin'>
+      <div class='flex project-flex mb-2'>
+        <div class='flex flex-column projects-width'>
+          <h2 class='lead'>Projects</h2>
+          <p>
+            Look at all these projects. If any of these draw your interest,
+            don't hesistate to contact me below!
+          </p>
+        </div>
+
+        <img class='project-img-width' src='/assets/undraw_project_completed_re_jr7u.svg' />
+      </div>
+
+      <div class='flex flex-center flex-column'>
+        <div class='skewed-card'>
+          <div class='card-text'>
+            <small>For Your Home</small>
+            <h1>Shopper Tropper</h1>
+            <p>
+              Shopper Tropper is a mock ecommerce website built for a home
+              goods store. Built with a clean and user friendly interface,
+              it uses Google OAuth for authentication and authorization for
+              ease-of-access.
+            </p>
+          </div>
+          <div class='card-img'>
+            <div>
+              <img src='/assets/shopper-tropper-home.png' alt='Shopper Tropper homepage' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='skills-section-margin'>
+      <h2 class='lead'>Skills</h2>
+      <ul class='skills-ul flex flex-wrap flex-evenly'>
+        <li>
+          <i class='fab fa-github-square fa-4x flex-column'></i>
+          <p>GitHub</p>
+        </li>
+        <li>
+          <i class='fab fa-css3-alt fa-4x flex-column'></i>
+          <p>CSS</p>
+        </li>
+        <li>
+          <i class='fab fa-python fa-4x flex-column'></i>
+          <p>Python</p>
+        </li>
+        <li>
+          <i class='fab fa-js-square fa-4x flex-column'></i>
+          <p>JavaScript</p>
+        </li>
+        <li>
+          <i class='fab fa-react fa-4x flex-column'></i>
+          <p>React</p>
+        </li>
+        <li>
+          <i class='fab fa-git-alt fa-4x flex-column'></i>
+          <p>Git</p>
+        </li>
+        <li>
+          <i class='fab fa-bootstrap fa-4x flex-column'></i>
+          <p>Bootstrap</p>
+        </li>
+        <li>
+          <i class='fas fa-terminal fa-4x flex-column'></i>
+          <p>CLI</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class='flex flex-between form-section section-margin'>
+      <img src='/assets/undraw_chatting_re_j55r.svg' class='form-img' />
+      <div class='mw'>
+        <h2>Reach out</h2>
+        <p>
+          Questions? Concerns? Anything else? Send me a message and I'll
+          respond as soon as I can.
+        </p>
+        <form class='form'>
+          <div class='flex flex-column text-small form-field'>
+            <label for='name'>Name</label>
+            <input type='name' required />
+          </div>
+
+          <div class='flex flex-column text-small form-field'>
+            <label for='name'>Email</label>
+            <input type='email' required />
+          </div>
+
+          <div class='flex flex-column text-small form-field'>
+            <label for='name'>Company (optional)</label>
+            <input type='text' />
+          </div>
+
+          <div class='flex flex-column text-small form-field'>
+            <label for='name'>Preferred time to contact</label>
+            <input type='text' required />
+          </div>
+
+          <input type='submit' value='Submit' class='button' />
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class='flex flex-gap flex-center first-section-margin h-25'>
+    <div class='flex flex-column flex-center'>
+      <a href='#'>
+        <i class='bi bi-github icon-size icon-left'></i>
+      </a>
+      <a href='#'>
+        <i class='bi bi-linkedin icon-size icon-right'></i>
+      </a>
+    </div>
+    <div class='flex flex-column flex-around h-f-s'>
+      <p class='bold'>Anthony Does Web Stuff</p>
+      <a href='#'>555-555-5555</a>
+      <a href='#'>anthony@webstuff.com</a>
+    </div>
+  </footer>
 </body>
 
 </html>
