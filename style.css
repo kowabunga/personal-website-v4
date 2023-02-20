@@ -7,17 +7,28 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #f6f8fa;
 }
 
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: .81rem;
+}
+
 header {
-  margin-top: 2rem;
+  padding: 5rem 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex: 0;
 }
 
 main {
-  padding: 15px;
+  /* padding: 15px; */
   box-shadow: 0, 0, 5px #333;
   line-height: 1.5;
 }
@@ -33,6 +44,7 @@ a {
   text-underline-offset: 2px
 }
 
+.bg-dark a:hover,
 a:hover {
   color: #6c63ff;
 }
@@ -80,8 +92,19 @@ footer>div {
 
 
 
-input {
+input,
+textarea {
   padding: .25rem .5rem;
+}
+
+.bg-dark {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 0 10px -10px rgba(0, 0, 0, .3);
+}
+
+.bg-dark a {
+  color: #fff;
 }
 
 .skills-ul {
@@ -149,12 +172,10 @@ input {
   margin: 2rem;
 }
 
-
 .profile {
   width: 20rem;
   height: 20rem;
   clip-path: circle();
-  border: 3px solid #333;
   border-radius: 50%;
 }
 
@@ -166,10 +187,18 @@ input {
   margin: 0rem 0 2rem 0;
 }
 
-.skills-section-margin {
-  margin: 10rem 0 2rem 0;
+.skills-section-spacing {
+  margin-top: 10rem;
+  padding: 10rem 5rem;
 }
 
+.skills-section-spacing div:first-child {
+  margin-bottom: 5rem;
+}
+
+.skills-img-width {
+  width: 175px;
+}
 
 .card {
   width: 16rem;
@@ -318,7 +347,6 @@ img {
   .form-img {
     width: 75%
   }
-
 }
 
 @media(max-width:500px) {

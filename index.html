@@ -14,12 +14,11 @@
 </head>
 
 <body>
-  <header class='w-full flex flex-center flex-column'>
+
+  <header class='w-full flex flex-center flex-column bg-dark'>
     <div class='profile-outer'>
       <img class='profile' src='/assets/278987322_353578783257844_1431226512088762579_n.jpg' />
     </div>
-  </header>
-  <main class='flex flex-center flex-column'>
     <section class='first-section-margin flex flex-gap section-intro-border'>
       <div>
         <h1 class='lead'>Hi, I'm Anthony. </h1>
@@ -41,7 +40,8 @@
         </div>
       </div>
     </section>
-
+  </header>
+  <main class='flex flex-center flex-column'>
     <section class='section-margin'>
       <div class='flex project-flex mb-2'>
         <div class='flex flex-column projects-width'>
@@ -118,24 +118,31 @@
       </div>
     </section>
 
-    <section class='skills-section-margin'>
-      <h2 class='lead'>Skills</h2>
-      <ul class='skills-ul flex flex-wrap flex-evenly'>
-        <li><i class="devicon-html5-plain"></i></li>
-        <li><i class="devicon-css3-plain"></i></li>
-        <li><i class="devicon-javascript-plain"></i></li>
-        <li><i class="devicon-react-original"></i></li>
-        <li><i class="devicon-django-plain"></i></li>
-        <li><i class="devicon-git-plain"></i></li>
-        <li><i class="devicon-github-original"></i></li>
-        <li><i class="devicon-bootstrap-plain"></i></li>
-        <li><i class="devicon-nodejs-plain"></i></li>
-        <li><i class="devicon-express-original"></i></li>
-        <li><i class="devicon-mongodb-plain"></i></li>
-      </ul>
+    <section class='skills-section-spacing bg-dark w-full '>
+      <div class="flex project-flex flex-evenly flex-center">
+        <h2 class='lead'>Skills</h2>
+        <img class='skills-img-width' src='/assets/undraw_certificate_re_yadi.svg' />
+
+      </div>
+      <div>
+        <ul class='skills-ul flex flex-wrap flex-evenly'>
+          <li><i class="devicon-html5-plain"></i></li>
+          <li><i class="devicon-css3-plain"></i></li>
+          <li><i class="devicon-javascript-plain"></i></li>
+          <li><i class="devicon-react-original"></i></li>
+          <li><i class="devicon-django-plain"></i></li>
+          <li><i class="devicon-git-plain"></i></li>
+          <li><i class="devicon-github-original"></i></li>
+          <li><i class="devicon-bootstrap-plain"></i></li>
+          <li><i class="devicon-nodejs-plain"></i></li>
+          <li><i class="devicon-express-original"></i></li>
+          <li><i class="devicon-mongodb-plain"></i></li>
+        </ul>
+      </div>
+
     </section>
 
-    <section class='flex flex-between form-section section-margin' id="form">
+    <section class='flex flex-between form-section section-margin' id=" form">
       <img src='/assets/undraw_chatting_re_j55r.svg' class='form-img' />
       <div class='mw'>
         <h2>Reach out</h2>
