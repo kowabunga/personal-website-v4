@@ -11,6 +11,19 @@ body {
   background-color: #f6f8fa;
 }
 
+header,
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+main section:last-of-type {
+  min-height: auto;
+}
+
 textarea {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -28,7 +41,6 @@ nav {
 }
 
 main {
-  /* padding: 15px; */
   box-shadow: 0, 0, 5px #333;
   line-height: 1.5;
 }
@@ -119,6 +131,10 @@ textarea {
 .lead {
   font-weight: 400;
   font-size: 3rem;
+}
+
+.sk {
+  text-align: end;
 }
 
 .icon-size {
@@ -337,11 +353,6 @@ img {
     top: -5em;
     left: 50%;
     transform: translateX(-50%) rotate(10deg);
-  }
-
-  .form-section {
-    flex-direction: column;
-    align-items: center;
   }
 
   .form-img {

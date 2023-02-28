@@ -14,12 +14,25 @@
 </head>
 
 <body>
+  <nav class="bg-dark">
+    <ul class="flex flex-center flex-between">
+      <li>
+        <a href="">Projects</a>
+      </li>
+      <li>
+        <a href="">Skills</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
 
-  <header class='w-full flex flex-center flex-column bg-dark'>
+    </ul>
+  </nav>
+  <header class='w-full flex-column bg-dark flex-evenly'>
     <div class='profile-outer'>
       <img class='profile' src='/assets/278987322_353578783257844_1431226512088762579_n.jpg' />
     </div>
-    <section class='first-section-margin flex flex-gap section-intro-border'>
+    <div class='first-section-margin flex flex-gap section-intro-border'>
       <div>
         <h1 class='lead'>Hi, I'm Anthony. </h1>
         <p>
@@ -39,10 +52,10 @@
           <a href="/anthony_siletti_resume.pdf" target="_blank">Resume</a>
         </div>
       </div>
-    </section>
+    </div>
   </header>
-  <main class='flex flex-center flex-column'>
-    <section class='section-margin'>
+  <main>
+    <section class='section-margin flex-column'>
       <div class='flex project-flex mb-2'>
         <div class='flex flex-column projects-width'>
           <h2 class='lead'>Projects</h2>
@@ -118,11 +131,17 @@
       </div>
     </section>
 
-    <section class='skills-section-spacing bg-dark w-full '>
-      <div class="flex project-flex flex-evenly flex-center">
-        <h2 class='lead'>Skills</h2>
-        <img class='skills-img-width' src='/assets/undraw_certificate_re_yadi.svg' />
+    <section class='skills-section-spacing flex-evenly bg-dark w-full flex-column'>
+      <div class='flex project-flex mb-2'>
+        <img class='project-img-width' src='/assets/undraw_certificate_re_yadi.svg' />
 
+        <div class='flex flex-column projects-width'>
+          <h2 class='lead sk'>Skills</h2>
+          <p>
+            I've been around the block a few times. Along the way, I've seen some cool things and learned a few skills. See what they are here.
+
+          </p>
+        </div>
       </div>
       <div>
         <ul class='skills-ul flex flex-wrap flex-evenly'>
@@ -142,7 +161,7 @@
 
     </section>
 
-    <section class='flex flex-between form-section section-margin' id=" form">
+    <section class='section-margin' id=" form">
       <img src='/assets/undraw_chatting_re_j55r.svg' class='form-img' />
       <div class='mw'>
         <h2>Reach out</h2>
