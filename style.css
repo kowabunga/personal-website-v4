@@ -155,6 +155,7 @@ textarea {
 }
 
 .initials {
+  text-decoration: none;
   font-family: 'Shantell Sans', cursive;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(rgb(126, 70, 195) 0%,
@@ -162,6 +163,10 @@ textarea {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.initials:hover{
+  
 }
 
 .bg-dark {
