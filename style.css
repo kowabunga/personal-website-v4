@@ -118,14 +118,14 @@ a i {
   font-size: 2.5rem;
 }
 
+nav ul li:nth-child(odd) a:hover,
 .skills-ul li:nth-child(odd) i:hover {
   color: #6c63ff;
-  filter: drop-shadow(0 0 3px #6c63ff);
 }
 
+nav ul li:nth-child(even) a:hover,
 .skills-ul li:nth-child(even) i:hover {
   color: #9cecf7;
-  filter: drop-shadow(0 0 3px #9cecf7);
 }
 
 ul li i {
@@ -163,10 +163,6 @@ textarea {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.initials:hover{
-  
 }
 
 .bg-dark {
