@@ -57,7 +57,7 @@ header {
 
 nav {
   position: fixed;
-  padding: 1.5rem 2rem;
+  padding: .5rem 2rem;
   width: 100%;
   display: flex;
   background-color: #fff;
