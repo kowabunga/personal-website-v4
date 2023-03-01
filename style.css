@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -15,13 +19,17 @@ header {
   background: radial-gradient(circle at 10% 20%, rgb(126, 70, 195) 0%, rgb(156, 236, 247) 90%);
 }
 
+section {
+  padding: 0 15px;
+}
+
 header,
 section:first-of-type {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+
 }
 
 header div {
@@ -110,8 +118,14 @@ a i {
   font-size: 2.5rem;
 }
 
-i:hover {
+.skills-ul li:nth-child(odd) i:hover {
   color: #6c63ff;
+  filter: drop-shadow(0 0 3px #6c63ff);
+}
+
+.skills-ul li:nth-child(even) i:hover {
+  color: #9cecf7;
+  filter: drop-shadow(0 0 3px #9cecf7);
 }
 
 ul li i {
@@ -138,6 +152,16 @@ footer>div {
 input,
 textarea {
   padding: .25rem .5rem;
+}
+
+.initials {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(rgb(126, 70, 195) 0%,
+      rgb(156, 236, 247) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bg-dark {

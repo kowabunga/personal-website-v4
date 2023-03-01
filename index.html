@@ -7,23 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,700&family=Roboto:wght@100;300;400&family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="./style.css">
   <title>Anthony Siletti</title>
 </head>
 
 <body>
-  <nav class="flex flex-end">
+  <nav class="flex flex-between">
+    <span class="initials">A.S.</span>
     <ul class="flex flex-center flex-between">
       <li>
-        <a href="">Projects</a>
+        <a href="#projects">Projects</a>
       </li>
       <li>
-        <a href="">Skills</a>
+        <a href="#skills">Skills</a>
       </li>
       <li>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
 
     </ul>
@@ -55,7 +56,7 @@
     </div>
   </header>
   <main>
-    <section class='section-margin flex-column'>
+    <section class='section-margin flex-column' id="projects">
       <div class='flex project-flex mb-2'>
         <div class='flex flex-column projects-width'>
           <h2 class='lead'>Projects</h2>
@@ -131,7 +132,7 @@
       </div>
     </section>
 
-    <section class='section-margin skills-section-spacing flex-evenly bg-dark w-full flex-column'>
+    <section class='section-margin skills-section-spacing flex-evenly bg-dark w-full flex-column' id="skills">
       <div class='flex flex-evenly project-flex mb-2 w-full'>
         <img class='project-img-width' src='/assets/undraw_certificate_re_yadi.svg' />
 
@@ -161,7 +162,7 @@
 
     </section>
 
-    <section class='section-margin flex' id=" form">
+    <section class='section-margin flex flex-center' id="contact">
       <img src='/assets/undraw_chatting_re_j55r.svg' class='form-img' />
       <div class='mw'>
         <h2>Reach out</h2>
