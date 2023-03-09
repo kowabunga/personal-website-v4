@@ -29,10 +29,7 @@
 
     </ul>
   </nav>
-  <header class='w-full flex-column bg-dark '>
-    <div class='profile-outer'>
-      <img class='profile' src='/assets/278987322_353578783257844_1431226512088762579_n.jpg' />
-    </div>
+  <header class='w-full flex-column '>
     <div class='first-section-margin flex flex-gap section-intro-border'>
       <div>
         <h1 class='lead'>Hi, I'm Anthony. </h1>
@@ -56,9 +53,30 @@
     </div>
   </header>
   <main>
+    <section class="first-section-margin small-section-spacing w-full flex-column" id="about">
+      <div class='flex flex-center project-flex mb-2  px-2'>
+        <div class='profile-outer'>
+          <img class='profile' src='/assets/278987322_353578783257844_1431226512088762579_n.jpg' />
+        </div>
+
+        <div class='flex flex-column about-padding'>
+          <h2 class='lead sk'>About</h2>
+          <p>
+            I'm a software developer. I'm here to take your ideas and build something amazing out of them.
+          </p>
+          <p>
+            I love to read up on new technologies and delve deeper into technologies and tools that I'm already familiar with. I'm thrilled to be able to that knowledge and apply it to creating amazing things for others to see.
+          </p>
+          <p>
+            If I'm not coding, I'm probably reading. While not originally one of my favorite things to do I've come to enjoy reading non-fiction as much and as often as I find myself able to fit it in to my schedule. For me, making sure I can accomplish my work/personal goals while ensuring I get some me-time, balancing that is a great accomplishment.
+          </p>
+        </div>
+      </div>
+
+    </section>
     <section class='section-margin flex-column' id="projects">
       <div class='flex project-flex mb-2'>
-        <div class='flex flex-column projects-width'>
+        <div class='flex  flex-column'>
           <h2 class='lead'>Projects</h2>
           <p>
             Look at all these projects. If any of these draw your interest,
@@ -69,7 +87,7 @@
         <img class='project-img-width' src='/assets/undraw_project_completed_re_jr7u.svg' />
       </div>
 
-      <div class='flex flex-center flex-column'>
+      <div class='flex flex-wrap flex-gap flex-center'>
         <div class='skewed-card'>
           <div class='card-text'>
             <small>For Your Home</small>
@@ -132,15 +150,14 @@
       </div>
     </section>
 
-    <section class='section-margin skills-section-spacing flex-evenly bg-dark w-full flex-column' id="skills">
-      <div class='flex flex-evenly project-flex mb-2 w-full'>
+    <section class='section-margin small-section-spacing' id="skills">
+      <div class='flex project-flex flex-center mb-2 '>
         <img class='project-img-width' src='/assets/undraw_certificate_re_yadi.svg' />
 
-        <div class='flex flex-column projects-width'>
+        <div class='flex flex-column skill-text-area'>
           <h2 class='lead sk'>Skills</h2>
           <p>
-            I've been around the block a few times. Along the way, I've seen some cool things and learned a few skills. See what they are here.
-
+            Since I began my journey into software development I developed a love for creating websites that can be easily navigated. To that extend I've learned about numerous tools and technolgoes that can help me accomplish these tasks. From basic HTML to advanced React and Node.js I will not stop learning, for if I have I have failed.
           </p>
         </div>
       </div>

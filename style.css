@@ -15,6 +15,11 @@ body {
   background-color: #f6f8fa;
 }
 
+header,
+header a {
+  color: #fff
+}
+
 header {
   background: radial-gradient(circle at 10% 20%, rgb(126, 70, 195) 0%, rgb(156, 236, 247) 90%);
 }
@@ -24,7 +29,7 @@ section {
 }
 
 header,
-section:first-of-type {
+section:nth-of-type(2) {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -38,6 +43,10 @@ header div {
 
 main section:last-of-type {
   min-height: auto;
+}
+
+main section:first-of-type {
+  padding: 5rem 1rem;
 }
 
 textarea {
@@ -116,6 +125,11 @@ footer a {
 a i {
   margin: 0 10px;
   font-size: 2.5rem;
+}
+
+#skills div ul {
+  width: 50%;
+  margin: 0 auto;
 }
 
 nav ul li:nth-child(odd) a:hover,
@@ -248,15 +262,12 @@ textarea {
   margin: 2rem;
 }
 
-.profile-outer {
-  margin-bottom: 5rem;
-}
-
 .profile {
   width: 20rem;
   height: 20rem;
-  clip-path: circle();
-  border-radius: 50%;
+  /* clip-path: circle(); */
+  /* border-radius: 50%; */
+  border-radius: 20px;
 }
 
 .section-margin {
@@ -267,14 +278,16 @@ textarea {
   margin: 0rem 0 2rem 0;
 }
 
-.skills-section-spacing {
-  margin-top: 10rem;
+.small-section-spacing {
   padding: 10rem 5rem;
-
 }
 
 .skills-img-width {
   width: 175px;
+}
+
+.skill-text-area {
+  max-width: 50%
 }
 
 .button {
@@ -318,14 +331,15 @@ textarea {
   font-weight: bold;
 }
 
+
 .skewed-card {
-  width: 50rem;
-  display: flex;
+  width: 25rem;
+  height: 691px;
+  display: block;
   background-color: #fff;
   margin: 2rem 0;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  height: 25rem;
   transition: .15s ease-in;
 }
 
@@ -339,7 +353,6 @@ textarea {
 
 .card-text {
   padding: 1.5rem;
-  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -347,7 +360,6 @@ textarea {
 }
 
 .card-img {
-  width: 60%;
   height: 25rem;
   position: relative;
   overflow: hidden;
@@ -380,52 +392,69 @@ img {
   width: 140%;
 }
 
+.card-img,
+.card-text {
+  width: 100%;
+}
+
+.skewed-card .card-img::before {
+  content: '';
+  width: 120%;
+  height: 40%;
+  top: -5em;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg);
+}
+
+.about-padding {
+  padding: 0 2rem
+}
+
 @media(max-width:825px) {
-  .skewed-card {
-    display: block;
-    max-width: 90vw;
-    height: 100%;
-  }
-
-  .card-img,
-  .card-text {
-    width: 100%;
-  }
-
-  img {
-    width: 160%;
-  }
-
-  .skewed-card .card-img::before {
-    content: '';
-    width: 120%;
-    height: 40%;
-    top: -5em;
-    left: 50%;
-    transform: translateX(-50%) rotate(10deg);
-  }
-
   .form-img {
     width: 75%
   }
+
+  .project-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-text-area {
+    max-width: 100%
+  }
+
+  .profile-outer {
+    margin: 0 auto;
+  }
+
 }
 
 @media(max-width:720px) {
   main section:last-of-type {
     flex-direction: column;
   }
+
+  img.profile {
+    margin: 0 auto;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .about-padding {
+    padding: 0;
+  }
 }
+
 
 @media(max-width:500px) {
   .lead {
     font-size: 2.25rem
   }
 
-  .project-flex {
-    flex-direction: column;
+  #skills div ul {
+    width: 100%
   }
-
-
 }
 
 @media (min-width:501px) {
