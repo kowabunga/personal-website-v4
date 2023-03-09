@@ -24,6 +24,31 @@ header {
   background: radial-gradient(circle at 10% 20%, rgb(126, 70, 195) 0%, rgb(156, 236, 247) 90%);
 }
 
+header div {
+  transform: scale(1.1);
+}
+
+/* header fade ins */
+header div div h1 {
+  animation: fadeFromDirection .5s ease-in .125s forwards;
+  opacity: 0;
+}
+
+header div div p:first-of-type {
+  animation: fadeFromDirection .5s ease-in .25s forwards;
+  opacity: 0;
+}
+
+header div div p:last-of-type {
+  animation: fadeFromDirection .5s ease-in .5s forwards;
+  opacity: 0;
+}
+
+header div div div {
+  animation: fadeFromDirection .5s ease-in .75s forwards;
+  opacity: 0;
+}
+
 section {
   padding: 0 15px;
 }
@@ -278,8 +303,15 @@ textarea {
   margin: 0rem 0 2rem 0;
 }
 
+.first-section-margin div p,
+.first-section-margin div h1,
+.first-section-margin div div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .small-section-spacing {
-  padding: 10rem 5rem;
+  padding: 5rem;
 }
 
 .skills-img-width {
@@ -444,6 +476,10 @@ img {
   .about-padding {
     padding: 0;
   }
+
+  header div {
+    transform: scale(1);
+  }
 }
 
 
@@ -460,5 +496,18 @@ img {
 @media (min-width:501px) {
   footer.flex-gap {
     gap: 200px;
+  }
+}
+
+
+@keyframes fadeFromDirection {
+  0% {
+    opacity: 0;
+    margin-left: -1rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: .99rem;
   }
 }
