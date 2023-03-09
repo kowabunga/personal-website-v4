@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bgc: #f6f8fa;
+  --purple: #6c63ff;
+  --blue: #9cecf7;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +18,7 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #f6f8fa;
+  background-color: var(--bgc);
 }
 
 header,
@@ -82,7 +88,7 @@ textarea {
 
 input,
 textarea {
-  border: 1px solid #6c63ff;
+  border: 1px solid var(--purple);
 }
 
 header {
@@ -94,8 +100,9 @@ nav {
   padding: .5rem 2rem;
   width: 100%;
   display: flex;
-  background-color: #fff;
+  background-color: var(--bgc);
   z-index: 5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 nav ul {
@@ -126,12 +133,12 @@ a {
 }
 
 a:nth-child(odd):hover {
-  color: #6c63ff;
+  color: var(--purple);
   text-shadow: 0 0 5px #fff;
 }
 
 a:nth-child(even):hover {
-  color: #9cecf7;
+  color: var(--blue);
   text-shadow: 0 0 5px #fff;
 }
 
@@ -159,12 +166,12 @@ a i {
 
 nav ul li:nth-child(odd) a:hover,
 .skills-ul li:nth-child(odd) i:hover {
-  color: #6c63ff;
+  color: var(--purple);
 }
 
 nav ul li:nth-child(even) a:hover,
 .skills-ul li:nth-child(even) i:hover {
-  color: #9cecf7;
+  color: var(--blue);
 }
 
 ul li i {
@@ -324,7 +331,7 @@ textarea {
 
 .button {
   background: #fff;
-  border: 1px solid #6c63ff;
+  border: 1px solid var(--purple);
   padding: .3rem .75rem;
   transition: .15s ease-in;
   border-radius: 3px;
@@ -332,7 +339,7 @@ textarea {
 
 .button:hover {
   cursor: pointer;
-  background-color: #6c63ff;
+  background-color: var(--purple);
   color: #fff;
 }
 
@@ -376,11 +383,11 @@ textarea {
 }
 
 .skewed-card:nth-child(odd):hover {
-  box-shadow: 0 0 5px #6c63ff;
+  box-shadow: 0 0 5px var(--purple);
 }
 
 .skewed-card:nth-child(even):hover {
-  box-shadow: 0 0 5px #9cecf7;
+  box-shadow: 0 0 5px var(--blue);
 }
 
 .card-text {
@@ -413,11 +420,11 @@ textarea {
 }
 
 .skewed-card:nth-child(odd) .card-img::before {
-  box-shadow: 0 0 25px #6c63ff
+  box-shadow: 0 0 25px var(--purple)
 }
 
 .skewed-card:nth-child(even) .card-img::before {
-  box-shadow: 0 0 25px #9cecf7
+  box-shadow: 0 0 25px var(--blue)
 }
 
 img {
