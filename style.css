@@ -208,7 +208,7 @@ textarea {
 /* < !-- ! Font Awesome Pro 6.3.0 by @fontawesome - https: //fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --> */
 .menu-btn:after {
   content: '';
-  background-image: url("assets/icon.svg");
+  background-image: url("/assets/icon.svg");
   background-repeat: no-repeat;
   display: flex;
   width: 25px;
