@@ -514,6 +514,7 @@ img {
     margin-top: 80px;
     opacity: 0;
     transition: opacity .5s ease-in;
+    height: 208px;
   }
 
   nav.active {
