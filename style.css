@@ -72,6 +72,10 @@ header div {
   padding: 0 15px;
 }
 
+header a {
+  font-size: .75rem;
+}
+
 main section:last-of-type {
   min-height: auto;
 }
@@ -501,6 +505,10 @@ img {
 
   header div {
     transform: scale(1);
+  }
+
+  header a {
+    font-size: 1rem;
   }
 
   nav {
