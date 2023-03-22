@@ -19,6 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   background-color: var(--bgc);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header,
@@ -350,6 +351,7 @@ textarea {
 
 .button {
   background: #fff;
+  color: #333;
   border: 1px solid var(--purple);
   padding: .3rem .75rem;
   transition: .15s ease-in;
@@ -549,6 +551,10 @@ img {
 
   #skills div ul {
     width: 100%
+  }
+
+  #projects div:last-of-type {
+    width: 95%;
   }
 }
 

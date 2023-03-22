@@ -4,3 +4,5 @@ const nav = document.querySelector('nav');
 menuBtn.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
+document.addEventListener('touchstart', function () {}, true);
